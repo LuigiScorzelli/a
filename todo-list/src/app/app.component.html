@@ -1,0 +1,10 @@
+<div class="container is-fluid">
+  <div class="section">
+    <h1 class="title is-2">My APP</h1>
+    <app-add-todo-form (newTodo)="onAddTodo($event)"></app-add-todo-form>
+    <app-todo-list [todos]="sortedTodos()" (completedTodo)="onCompletedTodo($event)"></app-todo-list>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

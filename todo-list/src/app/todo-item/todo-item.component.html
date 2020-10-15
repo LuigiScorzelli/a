@@ -1,0 +1,10 @@
+<div class="section">
+  <article class="message is-dark">
+    <div class="message-body"> 
+      <p class="subtitle is-5">Task: {{ todo.desc }} ({{ todo.priority }})</p>
+      <p>completato: {{ todo.completed }}</p>
+      <small>{{ todo.date.toLocaleDateString() }}</small><br><br>
+      <button class="button is-dark is-outlined is-small" *ngIf="!todo.completed" (click)="onCompletedTodo()">Completa</button>
+    </div>
+  </article>
+</div>
